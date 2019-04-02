@@ -5,7 +5,7 @@ pub fn insertion_sort<T>(list: &mut [T])
 {
     for i in 1..list.len() {
         let mut j = i;
-        let tmp = list[j - 1];
+        let tmp = list[j];
         while j > 0 && list[j - 1] > tmp {
             list[j] = list[j - 1];
             j -= 1;
