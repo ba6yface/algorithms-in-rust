@@ -19,10 +19,9 @@ mod tests {
     use super::*;
 
     #[test]
-    fn basic() {
+    fn test_insertion() {
         let mut arr = vec![2, 1, 3, 5, 4];
         insertion_sort(&mut arr);
-        println!("{:?}", arr);
         assert_eq!(vec![1, 2, 3, 4, 5], arr);
     }
 }
